@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CV Alchrist</title>
+
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <script src="popup.js"></script>
+</head>
+
+<body>
+  <form action="#">
+    <fieldset>
+      <legend>Contact information</legend>
+        <label for="firstname">Firstname</label>
+        <input id="firstname"><br>
+
+        <label for="name">Name</label>
+        <input id="name"><br>
+
+        <label for="age">Age</label>
+        <input type="number" id="age"><br>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone"><br>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email"><br>
+        
+        <label for="student">Student at 42?:</label>
+        <input type="checkbox" id="student"><br>
+
+        <label for="gender_male">Male</label>
+        <input name="gender" value="Male" type="radio" id="gender_male">
+        <label for="gender_female">Female</label>
+        <input name="gender" value="Female" type="radio" id="gender_female">
+        <label for="gender_other">Other</label>
+        <input name="gender" value="Other" type="radio" id="gender_other">
+        <br>
+
+    <p><button type="submit" onclick="displayFormContents()">
+      RUUUN
+    </button></p>
+  </form>
+</body>
+
+</html>
