@@ -1,0 +1,40 @@
+td.filled {
+	border: 1px solid black;
+	padding: 10px
+}
+
+td.noble {
+	background-color: aquamarine;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+h4 {
+	text-align: left;
+	margin-bottom: 0%;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+li.number {
+	font-size: 200%;
+	text-align: right;
+}
+
+li.small {
+	font-size: 150%;
+	font-style: italic;
+	color: darkblue;
+}
+
+li.electron {
+	font-size: 75%;
+	/* font-style: italic; */
+	color: brown;
+	text-align: right;
+}
