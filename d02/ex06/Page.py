@@ -7,20 +7,18 @@ class Page:
         self.elem = elem
 
     def __str__(self) -> str:
-        result = ""
         if isinstance(self.elem, Html):
-            result += "<!DOCTYPE html>\n"
-        result += str(self.elem)
-        return result
+            return "<!DOCTYPE html>\n" + str(self.elem)
+        return str(self.elem)
 
     def write_to_file(self, path: str) -> None:
-        f = open(path, "w")
-        f.write(self.__str__())
+        with open(path, "w") as f:
+            f.write(self.__str__())
 
     def is_valid(self) -> bool:
-        return self.__recursive_check(self.elem)
+        return self.check_valid(self.elem)
 
-    def __recursive_check(self, elem: Elem()) -> bool:
+    def check_valid(self, elem: Elem()) -> bool:
         if not (isinstance(elem, (Html, Head, Body, Title, Meta, Img, Table, Th, Tr, Td, Ul, Ol, Li,
                                   H1, H2, P, Div, Span, Hr, Br)) or type(elem) == Text):
             return False
@@ -28,16 +26,13 @@ class Page:
             return True
         if isinstance(elem, Html) and len(elem.content) == 2 \
                 and type(elem.content[0]) == Head and type(elem.content[1]) == Body:
-            if (all(self.__recursive_check(el) for el in elem.content)):
-                return True
-        elif isinstance(elem, Head) and [isinstance(el, Title) for el in elem.content].count(True) == 1:
-            if (all(self.__recursive_check(el) for el in elem.content)):
-                return True
+            return all(self.check_valid(el) for el in elem.content)
+        elif isinstance(elem, Head) and sum([isinstance(el, Title) for el in elem.content]) == 1:
+            return all(self.check_valid(el) for el in elem.content)
         elif isinstance(elem, (Body, Div)) and \
                 all([isinstance(el, (H1, H2, Div, Table, Ul, Ol, Span)) or
                     type(el) == Text for el in elem.content]):
-            if (all(self.__recursive_check(el) for el in elem.content)):
-                return True
+            return all(self.check_valid(el) for el in elem.content)
         elif isinstance(elem, (Title, H1, H2, Li, Th, Td)) and \
                 len(elem.content) == 1 and type(elem.content[0]) == Text:
             return True
@@ -46,12 +41,10 @@ class Page:
             return True
         elif isinstance(elem, Span) and \
                 all([isinstance(el, (Text, P)) for el in elem.content]):
-            if (all(self.__recursive_check(el) for el in elem.content)):
-                return True
+            return all(self.check_valid(el) for el in elem.content)
         elif isinstance(elem, (Ul, Ol)) and len(elem.content) > 0 and \
                 all([isinstance(el, Li) for el in elem.content]):
-            if (all(self.__recursive_check(el) for el in elem.content)):
-                return True
+            return all(self.check_valid(el) for el in elem.content)
         elif isinstance(elem, Tr) and len(elem.content) > 0 and\
                 all([isinstance(el, (Th, Td)) for el in elem.content]) and \
                 all([type(el) == type(elem.content[0]) for el in elem.content]):
@@ -62,25 +55,25 @@ class Page:
         return False
 
     
-def __print_test(target: Page, toBe: bool):
+def print_test_result(target: Page, toBe: bool):
     print("================START===============")
     print(str(target))
     print("===============IS_VALID=============")
     assert target.is_valid() == toBe
     print("{:^36s}".format(str(target.is_valid())))
-    print("=================END================")
+    print("=================END================\n")
 
 
 def __test_Table():
     print("\n%{:=^34s}%\n".format("Table"))
     target = Page(Table())
-    __print_test(target, True)
+    print_test_result(target, True)
     target = Page(
         Table(
             [
                 Tr(),
             ]))
-    __print_test(target, True)
+    print_test_result(target, True)
     target = Page(
         Table(
             [
@@ -88,13 +81,13 @@ def __test_Table():
                     Text("Hello World!")
                 ),
             ]))
-    __print_test(target, False)
+    print_test_result(target, False)
 
 
 def __test_Tr():
     print("\n%{:=^34s}%\n".format("Tr"))
     target = Page(Tr())
-    __print_test(target, False)
+    print_test_result(target, False)
     target = Page(
         Tr(
             [
@@ -104,7 +97,7 @@ def __test_Tr():
                 Th(Text("title")),
                 Th(Text("title")),
             ]))
-    __print_test(target, True)
+    print_test_result(target, True)
     target = Page(
         Tr(
             [
@@ -115,14 +108,14 @@ def __test_Tr():
                 Td(Text("content")),
                 Td(Text("content")),
             ]))
-    __print_test(target, True)
+    print_test_result(target, True)
     target = Page(
         Tr(
             [
                 Th(Text("title")),
                 Td(Text("content")),
             ]))
-    __print_test(target, False)
+    print_test_result(target, False)
 
 
 def __test_Ul_OL():
@@ -130,11 +123,11 @@ def __test_Ul_OL():
     target = Page(
         Ul()
     )
-    __print_test(target, False)
+    print_test_result(target, False)
     target = Page(
         Ol()
     )
-    __print_test(target, False)
+    print_test_result(target, False)
     target = Page(
         Ul(
             Li(
@@ -142,7 +135,7 @@ def __test_Ul_OL():
             )
         )
     )
-    __print_test(target, True)
+    print_test_result(target, True)
     target = Page(
         Ol(
             Li(
@@ -150,7 +143,7 @@ def __test_Ul_OL():
             )
         )
     )
-    __print_test(target, True)
+    print_test_result(target, True)
     target = Page(
         Ul([
             Li(
@@ -161,7 +154,7 @@ def __test_Ul_OL():
             ),
         ])
     )
-    __print_test(target, True)
+    print_test_result(target, True)
     target = Page(
         Ol([
             Li(
@@ -172,7 +165,7 @@ def __test_Ul_OL():
             ),
         ])
     )
-    __print_test(target, True)
+    print_test_result(target, True)
     target = Page(
         Ul([
             Li(
@@ -183,7 +176,7 @@ def __test_Ul_OL():
             ),
         ])
     )
-    __print_test(target, False)
+    print_test_result(target, False)
     target = Page(
         Ol([
             Li(
@@ -194,7 +187,7 @@ def __test_Ul_OL():
             ),
         ])
     )
-    __print_test(target, False)
+    print_test_result(target, False)
 
 
 def __test_Span():
@@ -202,20 +195,20 @@ def __test_Span():
     target = Page(
         Span()
     )
-    __print_test(target, True)
+    print_test_result(target, True)
     target = Page(
         Span([
             Text("Hello?"),
             P(Text("World!")),
         ])
     )
-    __print_test(target, True)
+    print_test_result(target, True)
     target = Page(
         Span([
             H1(Text("World!")),
         ])
     )
-    __print_test(target, False)
+    print_test_result(target, False)
 
 
 def __test_P():
@@ -223,19 +216,19 @@ def __test_P():
     target = Page(
         P()
     )
-    __print_test(target, True)
+    print_test_result(target, True)
     target = Page(
         P([
             Text("Hello?"),
         ])
     )
-    __print_test(target, True)
+    print_test_result(target, True)
     target = Page(
         P([
             H1(Text("World!")),
         ])
     )
-    __print_test(target, False)
+    print_test_result(target, False)
 
 
 def __test_Title_H1_H2_Li_Th_Td():
@@ -244,26 +237,26 @@ def __test_Title_H1_H2_Li_Th_Td():
         target = Page(
             c()
         )
-        __print_test(target, False)
+        print_test_result(target, False)
         target = Page(
             c([
                 Text("Hello?"),
             ])
         )
-        __print_test(target, True)
+        print_test_result(target, True)
         target = Page(
             c([
                 H1(Text("World!")),
             ])
         )
-        __print_test(target, False)
+        print_test_result(target, False)
         target = Page(
             c([
                 Text("Hello?"),
                 Text("Hello?"),
             ])
         )
-        __print_test(target, False)
+        print_test_result(target, False)
 
 
 def __test_Body_Div():
@@ -272,33 +265,33 @@ def __test_Body_Div():
         target = Page(
             c()
         )
-        __print_test(target, True)
+        print_test_result(target, True)
         target = Page(
             c([
                 Text("Hello?"),
             ])
         )
-        __print_test(target, True)
+        print_test_result(target, True)
         target = Page(
             c([
                 H1(Text("World!")),
             ])
         )
-        __print_test(target, True)
+        print_test_result(target, True)
         target = Page(
             c([
                 Text("Hello?"),
                 Span(),
             ])
         )
-        __print_test(target, True)
+        print_test_result(target, True)
         target = Page(
             c([
                 Html(),
                 c()
             ])
         )
-        __print_test(target, False)
+        print_test_result(target, False)
 
 
 def __test_Title():
@@ -306,20 +299,20 @@ def __test_Title():
     target = Page(
         Title()
     )
-    __print_test(target, False)
+    print_test_result(target, False)
     target = Page(
         Title([
             Title(Text("Hello?")),
         ])
     )
-    __print_test(target, True)
+    print_test_result(target, True)
     target = Page(
         Title([
             Title(Text("Hello?")),
             Title(Text("Hello?")),
         ])
     )
-    __print_test(target, False)
+    print_test_result(target, False)
 
 
 def __test_Html():
@@ -327,7 +320,7 @@ def __test_Html():
     target = Page(
         Html()
     )
-    __print_test(target, False)
+    print_test_result(target, False)
     target = Page(
         Html([
             Head([
@@ -338,17 +331,17 @@ def __test_Html():
             ])
         ])
     )
-    __print_test(target, True)
+    print_test_result(target, True)
     target = Page(
         Html(
             Div()
         )
     )
-    __print_test(target, False)
+    print_test_result(target, False)
 
 
 def __test_Elem():
-    __print_test(Page(Elem()), False)
+    print_test_result(Page(Elem()), False)
 
 
 def __test_write_to_file(target: Page, path: str):
