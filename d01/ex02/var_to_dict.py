@@ -33,7 +33,7 @@ def my_copy(one_name=True):
                 dct[year] = []
             dct[year].append(musician)
         for year in dct:
-            print(year + " : " + ', '.join(dct[year]))
+            print(year + " : " + ' '.join(dct[year]))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CV {name} {surname}</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="name">{name} {surname}</h1>
+
+      <div id="designation">
+
+        <span class="title">from {country}</span> /
+        <span class="organization">{company}</span>
+
+      </div>
+
+      <div class="contact">
+        <div class="email">email: {email}</div>
+      </div>
+
+
+    </header>
+
+    <div class="content" role=main>
+      <p>
+        Want to work as <span style="font-size: 120%">{profession}</span>.
+      </p>
+
+      <section id="objective">
+        <h3 class="title">About me</h3>
+        <div class="Objective">
+          
+          <p>
+            {description}
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>
