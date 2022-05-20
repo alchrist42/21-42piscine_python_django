@@ -6,10 +6,10 @@ class HotBeverage:
         self.name = name
         self.desc = desc
 
-    def description(self) -> str:
+    def description(self):
         return self.desc
 
-    def __str__(self) -> str:
+    def __str__(self):
         return f"name : {self.name}\nprice: {self.price:0.2f}\ndescription: {self.desc}"
 
 
