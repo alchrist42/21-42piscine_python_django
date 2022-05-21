@@ -1,0 +1,20 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-blue">
+    <a class="navbar-brand" href="{% url 'ex01:django' %}"></a>
+
+    <div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'ex01:django' %}">Django</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'ex01:display' %}">Display</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'ex01:templates' %}">Templates</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>

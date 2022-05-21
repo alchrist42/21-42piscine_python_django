@@ -34,7 +34,8 @@ def find_phylosofia(page, previuos=[]):
 
                 # print("go to ", new_page)
                 # print("previous: ", link.previous)
-                return find_phylosofia(new_page, previuos)
+                ans, deep = find_phylosofia(new_page, previuos)
+                return ans, deep + 1
     print("nothing found")
     return False, 1
 

@@ -1,0 +1,24 @@
+{% extends "ex01/base.html" %}
+{% load static %}
+
+{% block title %}
+Ex01: Django, framework web.
+{% endblock %}
+
+
+{% block body %}
+  <div class="row justify-content-center p-2">
+    <p>
+      <h5>Temaplates</h5>
+      <p>
+        <img src="{% static 'ex01/schema.jpeg' %}" alt="My image">
+      </p>
+    </p>
+  </div>
+
+    
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="{% static 'ex01/style2.css' %}">
+{% endblock %}

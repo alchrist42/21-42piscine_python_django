@@ -1,0 +1,1192 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ex00: Markdown Cheatsheet.</title>
+    <link crossorigin="anonymous" media="all"
+        integrity="sha512-ksfTgQOOnE+FFXf+yNfVjKSlEckJAdufFIYGK7ZjRhWcZgzAGcmZqqArTgMLpu90FwthqcCX4ldDgKXbmVMeuQ=="
+        rel="stylesheet" href="https://github.githubassets.com/assets/light-92c7d381038e.css">
+    <link crossorigin="anonymous" media="all"
+        integrity="sha512-1KkMNn8M/al/dtzBLupRwkIOgnA9MWkm8oxS+solP87jByEvY/g4BmoxLihRogKcX1obPnf4Yp7dI0ZTWO+ljg=="
+        rel="stylesheet" href="https://github.githubassets.com/assets/dark-d4a90c367f0c.css">
+    <link data-color-theme="dark_dimmed" crossorigin="anonymous" media="all"
+        integrity="sha512-cZa7DZqvMBwD236uzEunO/G1dvw8/QftyT2UtLWKQFEy0z0eq0R5WPwqVME+3NSZG1YaLJAaIqtU+m0zWf/6SQ=="
+        rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed-7196bb0d9aaf.css">
+    <link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all"
+        integrity="sha512-WVoKqJ4y1nLsdNH4RkRT5qrM9+n9RFe1RHSiTnQkBf5TSZkJEc9GpLpTIS7T15EQaUQBJ8BwmKvwFPVqfpTEIQ=="
+        rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_high_contrast-595a0aa89e32.css">
+    <link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all"
+        integrity="sha512-XpAMBMSRZ6RTXgepS8LjKiOeNK3BilRbv8qEiA/M3m+Q4GoqxtHedOI5BAZRikCzfBL4KWYvVzYZSZ8Gp/UnUg=="
+        rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind-5e900c04c491.css">
+    <link data-color-theme="light_colorblind" crossorigin="anonymous" media="all"
+        integrity="sha512-3HF2HZ4LgEIQm77yOzoeR20CX1n2cUQlcywscqF4s+5iplolajiHV7E5ranBwkX65jN9TNciHEVSYebQ+8xxEw=="
+        rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind-dc71761d9e0b.css">
+    <link data-color-theme="light_high_contrast" crossorigin="anonymous" media="all"
+        integrity="sha512-+J8j3T0kbK9/sL3zbkCfPtgYcRD4qQfRbT6xnfOrOTjvz4zhr0M7AXPuE642PpaxGhHs1t77cTtieW9hI2K6Gw=="
+        rel="stylesheet" data-href="https://github.githubassets.com/assets/light_high_contrast-f89f23dd3d24.css">
+    <link data-color-theme="light_tritanopia" crossorigin="anonymous" media="all"
+        integrity="sha512-AQeAx5wHQAXNf0DmkvVlHYwA3f6BkxunWTI0GGaRN57GqD+H9tW8RKIKlopLS0qGaC54seFsPc601GDlqIuuHg=="
+        rel="stylesheet" data-href="https://github.githubassets.com/assets/light_tritanopia-010780c79c07.css">
+    <link data-color-theme="dark_tritanopia" crossorigin="anonymous" media="all"
+        integrity="sha512-+u5pmgAE0T03d/yI6Ha0NWwz6Pk0W6S6WEfIt8veDVdK8NTjcMbZmQB9XUCkDlrBoAKkABva8HuGJ+SzEpV1Uw=="
+        rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_tritanopia-faee699a0004.css">
+    <link crossorigin="anonymous" media="all"
+        integrity="sha512-hWiFpaVJG+3wHAdSwdg6RIbFZLU0r8cRNf89903QbJzJ/hhybi/ng6xSLFKySsz0n8AJ5IoQUnoD4K+rnO8qZg=="
+        rel="stylesheet" href="https://github.githubassets.com/assets/primer-856885a5a549.css">
+    <link crossorigin="anonymous" media="all"
+        integrity="sha512-m+INOiXmzglOe98h1DUpOJ/cczwJhT8Mh7nf7LgR6WzRo9ldMz52dlc3uCof0dvfm+vsxQ1skpP7mwvzHOuXaA=="
+        rel="stylesheet" href="https://github.githubassets.com/assets/global-9be20d3a25e6.css">
+    <link crossorigin="anonymous" media="all"
+        integrity="sha512-tytt4iUhosNvB/h0dpKyAiJgbmbwabQ1UeHGFw9NONEOpSAOkfLdjFRP2h5FwQNTnq6OrNo5mPNRxPlfzYXosw=="
+        rel="stylesheet" href="https://github.githubassets.com/assets/wiki-b72b6de22521.css">
+    <link crossorigin="anonymous" media="all"
+        integrity="sha512-hHbHxm/XzrCO6gujNDIGH7TFPwaHSdTNoE8unl9fGxGDnMKwoNNoZlp4lbEG0spdOPZYirnR/gMqQ0lDZ1PwNg=="
+        rel="stylesheet" href="https://github.githubassets.com/assets/github-8476c7c66fd7.css">
+    <style>
+        .body {
+            text-align: center;
+        }
+
+        .user-mention[href$="/alchrist42"] {
+            color: var(--color-user-mention-fg);
+            background-color: var(--color-user-mention-bg);
+            border-radius: 2px;
+            margin-left: -2px;
+            margin-right: -2px;
+            padding: 0 2px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="d-flex flex-column flex-md-row gh-header">
+        <h1 class="flex-auto min-width-0 mb-2 mb-md-0 mr-0 mr-md-2 gh-header-title">Markdown Cheatsheet</h1>
+  
+          <div class="mt-0 mt-lg-1 flex-shrink-0 gh-header-actions">
+            <a href="#wiki-pages-box" class="d-md-none ">Jump to bottom</a>
+  
+          </div>
+      </div>
+    <div class="markdown-body">
+        <h5>
+            <a id="user-content-table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><svg
+                    class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>Table of Contents
+        </h5>
+
+        <a name="user-content-headers"></a>
+        <h2>
+            <a id="user-content-headers" class="anchor" href="#headers" aria-hidden="true"><svg
+                    class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>Headers
+        </h2>
+        <div class="snippet-clipboard-content position-relative overflow-auto">
+            <pre lang="no-highlight" class="notranslate"><code class="notranslate"># H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+Alternatively, for H1 and H2, an underline-ish style:
+
+Alt-H1
+======
+
+Alt-H2
+------
+</code></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w" value="# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+Alternatively, for H1 and H2, an underline-ish style:
+
+Alt-H1
+======
+
+Alt-H2
+------" tabindex="0" role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <h1>
+            <a id="user-content-h1" class="anchor" href="#h1" aria-hidden="true"><svg class="octicon octicon-link"
+                    viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>H1
+        </h1>
+        <h2>
+            <a id="user-content-h2" class="anchor" href="#h2" aria-hidden="true"><svg class="octicon octicon-link"
+                    viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>H2
+        </h2>
+        <h3>
+            <a id="user-content-h3" class="anchor" href="#h3" aria-hidden="true"><svg class="octicon octicon-link"
+                    viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>H3
+        </h3>
+        <h4>
+            <a id="user-content-h4" class="anchor" href="#h4" aria-hidden="true"><svg class="octicon octicon-link"
+                    viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>H4
+        </h4>
+        <h5>
+            <a id="user-content-h5" class="anchor" href="#h5" aria-hidden="true"><svg class="octicon octicon-link"
+                    viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>H5
+        </h5>
+        <h6>
+            <a id="user-content-h6" class="anchor" href="#h6" aria-hidden="true"><svg class="octicon octicon-link"
+                    viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>H6
+        </h6>
+        <p>Alternatively, for H1 and H2, an underline-ish style:</p>
+        <h1>
+            <a id="user-content-alt-h1" class="anchor" href="#alt-h1" aria-hidden="true"><svg
+                    class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>Alt-H1
+        </h1>
+        <h2>
+            <a id="user-content-alt-h2" class="anchor" href="#alt-h2" aria-hidden="true"><svg
+                    class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>Alt-H2
+        </h2>
+        <a name="user-content-emphasis"></a>
+        <h2>
+            <a id="user-content-emphasis" class="anchor" href="#emphasis" aria-hidden="true"><svg
+                    class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>Emphasis
+        </h2>
+        <div class="snippet-clipboard-content position-relative overflow-auto">
+            <pre lang="no-highlight" class="notranslate"><code class="notranslate">Emphasis, aka italics, with *asterisks* or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough uses two tildes. ~~Scratch this.~~
+</code></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w" value="Emphasis, aka italics, with *asterisks* or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough uses two tildes. ~~Scratch this.~~" tabindex="0" role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
+        <p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+        <p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
+        <p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
+        <a name="user-content-lists"></a>
+        <h2>
+            <a id="user-content-lists" class="anchor" href="#lists" aria-hidden="true"><svg class="octicon octicon-link"
+                    viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>Lists
+        </h2>
+        <p>(In this example, leading and trailing spaces are shown with with dots: ⋅)</p>
+        <div class="snippet-clipboard-content position-relative overflow-auto">
+            <pre lang="no-highlight" class="notranslate"><code class="notranslate">1. First ordered list item
+2. Another item
+⋅⋅* Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+⋅⋅1. Ordered sub-list
+4. And another item.
+
+⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+
+⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
+⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
+⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
+</code></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w" value="1. First ordered list item
+2. Another item
+⋅⋅* Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+⋅⋅1. Ordered sub-list
+4. And another item.
+
+⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+
+⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
+⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
+⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses" tabindex="0" role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <ol>
+            <li>First ordered list item</li>
+            <li>Another item</li>
+        </ol>
+        <ul>
+            <li>Unordered sub-list.</li>
+        </ul>
+        <ol>
+            <li>
+                <p>Actual numbers don't matter, just that it's a number</p>
+            </li>
+            <li>
+                <p>Ordered sub-list</p>
+            </li>
+            <li>
+                <p>And another item.</p>
+                <p>You can have properly indented paragraphs within list items. Notice the blank line above, and the
+                    leading spaces (at least one, but we'll use three here to also align the raw Markdown).</p>
+                <p>To have a line break without a paragraph, you will need to use two trailing spaces.<br>
+                    Note that this line is separate, but within the same paragraph.<br>
+                    (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+                </p>
+            </li>
+        </ol>
+        <ul>
+            <li>Unordered list can use asterisks</li>
+        </ul>
+        <ul>
+            <li>Or minuses</li>
+        </ul>
+        <ul>
+            <li>Or pluses</li>
+        </ul>
+        <a name="user-content-links"></a>
+        <h2>
+            <a id="user-content-links" class="anchor" href="#links" aria-hidden="true"><svg class="octicon octicon-link"
+                    viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>Links
+        </h2>
+        <p>There are two ways to create links.</p>
+        <div class="snippet-clipboard-content position-relative overflow-auto">
+            <pre lang="no-highlight" class="notranslate"><code class="notranslate">[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+[I'm a reference-style link][Arbitrary case-insensitive reference text]
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself].
+
+URLs and URLs in angle brackets will automatically get turned into links. 
+http://www.example.com or &lt;http://www.example.com&gt; and sometimes 
+example.com (but not on Github, for example).
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com
+</code></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w" value="[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com &quot;Google's Homepage&quot;)
+
+[I'm a reference-style link][Arbitrary case-insensitive reference text]
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself].
+
+URLs and URLs in angle brackets will automatically get turned into links. 
+http://www.example.com or <http://www.example.com> and sometimes 
+example.com (but not on Github, for example).
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com" tabindex="0" role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <p><a href="https://www.google.com" rel="nofollow">I'm an inline-style link</a></p>
+        <p><a href="https://www.google.com" title="Google's Homepage" rel="nofollow">I'm an inline-style link with
+                title</a></p>
+        <p><a href="https://www.mozilla.org" rel="nofollow">I'm a reference-style link</a></p>
+        <p><a href="../blob/master/LICENSE">I'm a relative reference to a repository file</a></p>
+        <p><a href="http://slashdot.org" rel="nofollow">You can use numbers for reference-style link definitions</a></p>
+        <p>Or leave it empty and use the <a href="http://www.reddit.com" rel="nofollow">link text itself</a>.</p>
+        <p>URLs and URLs in angle brackets will automatically get turned into links.
+            <a href="http://www.example.com" rel="nofollow">http://www.example.com</a> or <a
+                href="http://www.example.com" rel="nofollow">http://www.example.com</a> and sometimes
+            example.com (but not on Github, for example).
+        </p>
+        <p>Some text to show that the reference links can follow later.</p>
+        <a name="user-content-images"></a>
+        <h2>
+            <a id="user-content-images" class="anchor" href="#images" aria-hidden="true"><svg
+                    class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>Images
+        </h2>
+        <div class="snippet-clipboard-content position-relative overflow-auto">
+            <pre lang="no-highlight" class="notranslate"><code class="notranslate">Here's our logo (hover to see the title text):
+
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+</code></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w" value="Here's our logo (hover to see the title text):
+
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &quot;Logo Title Text 1&quot;)
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &quot;Logo Title Text 2&quot;"
+                    tabindex="0" role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <p>Here's our logo (hover to see the title text):</p>
+        <p>Inline-style:
+            <img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text"
+                title="Logo Title Text 1">
+        </p>
+        <p>Reference-style:
+            <img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text"
+                title="Logo Title Text 2">
+        </p>
+        <a name="user-content-code"></a>
+        <h2>
+            <a id="user-content-code-and-syntax-highlighting" class="anchor" href="#code-and-syntax-highlighting"
+                aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16"
+                    height="16" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>Code and Syntax Highlighting
+        </h2>
+        <p>Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like
+            Github's and <em>Markdown Here</em> -- support syntax highlighting. Which languages are supported and how
+            those language names should be written will vary from renderer to renderer. <em>Markdown Here</em> supports
+            highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the
+            complete list, and how to write the language names, see the <a
+                href="http://softwaremaniacs.org/media/soft/highlight/test.html" rel="nofollow">highlight.js demo
+                page</a>.</p>
+        <div class="snippet-clipboard-content position-relative overflow-auto">
+            <pre lang="no-highlight" class="notranslate"><code class="notranslate">Inline `code` has `back-ticks around` it.
+</code></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w"
+                    value="Inline `code` has `back-ticks around` it." tabindex="0" role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
+        <p>Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four
+            spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax
+            highlighting.</p>
+        <div class="snippet-clipboard-content position-relative overflow-auto">
+            <pre lang="no-highlight" class="notranslate"><code class="notranslate">```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+```python
+s = "Python syntax highlighting"
+print s
+```
+
+```
+No language indicated, so no syntax highlighting. 
+But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
+```
+</code></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w" value="```javascript
+var s = &quot;JavaScript syntax highlighting&quot;;
+alert(s);
+```
+
+```python
+s = &quot;Python syntax highlighting&quot;
+print s
+```
+
+```
+No language indicated, so no syntax highlighting. 
+But let's throw in a <b>tag</b>.
+```" tabindex="0" role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <div class="highlight highlight-source-js position-relative overflow-auto">
+            <pre><span class="pl-k">var</span> <span class="pl-s1">s</span> <span class="pl-c1">=</span> <span class="pl-s">"JavaScript syntax highlighting"</span><span class="pl-kos">;</span>
+<span class="pl-en">alert</span><span class="pl-kos">(</span><span class="pl-s1">s</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w" value="var s = &quot;JavaScript syntax highlighting&quot;;
+alert(s);" tabindex="0" role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <div class="highlight highlight-source-python position-relative overflow-auto">
+            <pre><span class="pl-s1">s</span> <span class="pl-c1">=</span> <span class="pl-s">"Python syntax highlighting"</span>
+<span class="pl-k">print</span> <span class="pl-s1">s</span></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w" value="s = &quot;Python syntax highlighting&quot;
+print s" tabindex="0" role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <div class="snippet-clipboard-content position-relative overflow-auto">
+            <pre class="notranslate"><code class="notranslate">No language indicated, so no syntax highlighting in Markdown Here (varies on Github). 
+But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
+</code></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w" value="No language indicated, so no syntax highlighting in Markdown Here (varies on Github). 
+But let's throw in a <b>tag</b>." tabindex="0" role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <a name="user-content-footnotes"></a>
+        <h2>
+            <a id="user-content-footnotes" class="anchor" href="#footnotes" aria-hidden="true"><svg
+                    class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>Footnotes
+        </h2>
+        <p>Footnotes aren't part of the core Markdown spec, but they <a
+                href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes">supported
+                by GFM</a>.</p>
+        <div class="snippet-clipboard-content position-relative overflow-auto">
+            <pre lang="no-highlight" class="notranslate"><code class="notranslate">Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].  
+
+You can also use words, to fit your writing style more closely[^note].
+
+[^1]: My reference.
+[^2]: Every new line should be prefixed with 2 spaces.  
+This allows you to have a footnote with multiple lines.
+[^note]:
+Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
+This footnote also has been made with a different syntax using 4 spaces for new lines.
+</code></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w" value="Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].  
+
+You can also use words, to fit your writing style more closely[^note].
+
+[^1]: My reference.
+[^2]: Every new line should be prefixed with 2 spaces.  
+This allows you to have a footnote with multiple lines.
+[^note]:
+Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
+This footnote also has been made with a different syntax using 4 spaces for new lines." tabindex="0" role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <p>Renders to:</p>
+        <p><img src="https://user-images.githubusercontent.com/425687/160298620-6046b90e-698c-43cb-8e00-5f5871a906ad.png"
+                alt="rendered footnotes"></p>
+        <a name="user-content-tables"></a>
+        <h2>
+            <a id="user-content-tables" class="anchor" href="#tables" aria-hidden="true"><svg
+                    class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>Tables
+        </h2>
+        <p>Tables aren't part of the core Markdown spec, but they are part of GFM and <em>Markdown Here</em> supports
+            them. They are an easy way of adding tables to your email -- a task that would otherwise require
+            copy-pasting from another application.</p>
+        <div class="snippet-clipboard-content position-relative overflow-auto">
+            <pre lang="no-highlight" class="notranslate"><code class="notranslate">Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the 
+raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+</code></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w" value="Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the 
+raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3" tabindex="0" role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <p>Colons can be used to align columns.</p>
+        <table role="table">
+            <thead>
+                <tr>
+                    <th>Tables</th>
+                    <th align="center">Are</th>
+                    <th align="right">Cool</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>col 3 is</td>
+                    <td align="center">right-aligned</td>
+                    <td align="right">$1600</td>
+                </tr>
+                <tr>
+                    <td>col 2 is</td>
+                    <td align="center">centered</td>
+                    <td align="right">$12</td>
+                </tr>
+                <tr>
+                    <td>zebra stripes</td>
+                    <td align="center">are neat</td>
+                    <td align="right">$1</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>There must be at least 3 dashes separating each header cell. The outer pipes (|) are optional, and you don't
+            need to make the raw Markdown line up prettily. You can also use inline Markdown.</p>
+        <table role="table">
+            <thead>
+                <tr>
+                    <th>Markdown</th>
+                    <th>Less</th>
+                    <th>Pretty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><em>Still</em></td>
+                    <td><code>renders</code></td>
+                    <td><strong>nicely</strong></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+        <a name="user-content-blockquotes"></a>
+        <h2>
+            <a id="user-content-blockquotes" class="anchor" href="#blockquotes" aria-hidden="true"><svg
+                    class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>Blockquotes
+        </h2>
+        <div class="snippet-clipboard-content position-relative overflow-auto">
+            <pre lang="no-highlight" class="notranslate"><code class="notranslate">&gt; Blockquotes are very handy in email to emulate reply text.
+&gt; This line is part of the same quote.
+
+Quote break.
+
+&gt; This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
+</code></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w"
+                    value="> Blockquotes are very handy in email to emulate reply text.
+> This line is part of the same quote.
+
+Quote break.
+
+> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. "
+                    tabindex="0" role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <blockquote>
+            <p>Blockquotes are very handy in email to emulate reply text.
+                This line is part of the same quote.</p>
+        </blockquote>
+        <p>Quote break.</p>
+        <blockquote>
+            <p>This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to
+                make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em>
+                <strong>Markdown</strong> into a blockquote.
+            </p>
+        </blockquote>
+        <a name="user-content-html"></a>
+        <h2>
+            <a id="user-content-inline-html" class="anchor" href="#inline-html" aria-hidden="true"><svg
+                    class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>Inline HTML
+        </h2>
+        <p>You can also use raw HTML in your Markdown, and it'll mostly work pretty well.</p>
+        <div class="snippet-clipboard-content position-relative overflow-auto">
+            <pre lang="no-highlight" class="notranslate"><code class="notranslate">&lt;dl&gt;
+&lt;dt&gt;Definition list&lt;/dt&gt;
+&lt;dd&gt;Is something people use sometimes.&lt;/dd&gt;
+
+&lt;dt&gt;Markdown in HTML&lt;/dt&gt;
+&lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w" value="<dl>
+<dt>Definition list</dt>
+<dd>Is something people use sometimes.</dd>
+
+<dt>Markdown in HTML</dt>
+<dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>" tabindex="0" role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <dl>
+            <dt>Definition list</dt>
+            <dd>Is something people use sometimes.</dd>
+            <dt>Markdown in HTML</dt>
+            <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+        </dl>
+        <a name="user-content-hr"></a>
+        <h2>
+            <a id="user-content-horizontal-rule" class="anchor" href="#horizontal-rule" aria-hidden="true"><svg
+                    class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>Horizontal Rule
+        </h2>
+        <div class="snippet-clipboard-content position-relative overflow-auto">
+            <pre class="notranslate"><code class="notranslate">Three or more...
+
+---
+
+Hyphens
+
+***
+
+Asterisks
+
+___
+
+Underscores
+</code></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w" value="Three or more...
+
+---
+
+Hyphens
+
+***
+
+Asterisks
+
+___
+
+Underscores" tabindex="0" role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <p>Three or more...</p>
+        <hr>
+        <p>Hyphens</p>
+        <hr>
+        <p>Asterisks</p>
+        <hr>
+        <p>Underscores</p>
+        <a name="user-content-lines"></a>
+        <h2>
+            <a id="user-content-line-breaks" class="anchor" href="#line-breaks" aria-hidden="true"><svg
+                    class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>Line Breaks
+        </h2>
+        <p>My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt;
+            once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll
+            soon learn to get what you want. "Markdown Toggle" is your friend.</p>
+        <p>Here are some things to try out:</p>
+        <div class="snippet-clipboard-content position-relative overflow-auto">
+            <pre class="notranslate"><code class="notranslate">Here's a line for us to start with.
+
+This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
+
+This line is also a separate paragraph, but...
+This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
+</code></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w" value="Here's a line for us to start with.
+
+This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
+
+This line is also a separate paragraph, but...
+This line is only separated by a single newline, so it's a separate line in the *same paragraph*." tabindex="0"
+                    role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <p>Here's a line for us to start with.</p>
+        <p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p>
+        <p>This line is also begins a separate paragraph, but...<br>
+            This line is only separated by a single newline, so it's a separate line in the <em>same paragraph</em>.</p>
+        <p>(Technical note: <em>Markdown Here</em> uses GFM line breaks, so there's no need to use MD's two-space line
+            breaks.)</p>
+        <a name="user-content-videos"></a>
+        <h2>
+            <a id="user-content-youtube-videos" class="anchor" href="#youtube-videos" aria-hidden="true"><svg
+                    class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                    </path>
+                </svg></a>YouTube Videos
+        </h2>
+        <p>They can't be added directly but you can add an image with a link to the video like this:</p>
+        <div class="snippet-clipboard-content position-relative overflow-auto">
+            <pre lang="no-highlight" class="notranslate"><code class="notranslate">&lt;a href="http://www.youtube.com/watch?feature=player_embedded&amp;v=YOUTUBE_VIDEO_ID_HERE
+" target="_blank"&gt;&lt;img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /&gt;&lt;/a&gt;
+</code></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w" value="<a href=&quot;http://www.youtube.com/watch?feature=player_embedded&amp;v=YOUTUBE_VIDEO_ID_HERE
+&quot; target=&quot;_blank&quot;><img src=&quot;http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg&quot; 
+alt=&quot;IMAGE ALT TEXT HERE&quot; width=&quot;240&quot; height=&quot;180&quot; border=&quot;10&quot; /></a>"
+                    tabindex="0" role="button" style="display: inherit;">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+            </div>
+        </div>
+        <p>Or, in pure Markdown, but losing the image sizing and border:</p>
+        <div class="snippet-clipboard-content position-relative overflow-auto">
+            <pre lang="no-highlight" class="notranslate"><code class="notranslate">[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+</code></pre>
+            <div class="zeroclipboard-container position-absolute right-0 top-0">
+                <clipboard-copy aria-label="Copy"
+                    class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                    data-copy-feedback="Copied!" data-tooltip-direction="w"
+                    value="[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)"
+                    tabindex="0" role="button">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                        <path fill-rule="evenodd"
+                            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true"
+                        class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                        <path fill-rule="evenodd"
+                            d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+                        </path>
+                    </svg>
+                </clipboard-copy>
+                <hr>
+
+            </div>
+        </div>
+</body>
+
+</html>

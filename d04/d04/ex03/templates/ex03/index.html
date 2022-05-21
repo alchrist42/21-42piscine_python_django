@@ -1,0 +1,30 @@
+{% extends 'ex03/base.html' %}
+{% load static %}
+
+{% block title %}
+Shades
+{% endblock title %}
+
+{% block body %}
+<h4 class="d-flex justify-content-center">Shades</h4>
+<div class="d-flex justify-content-center">
+  
+  <table>
+    <thead>
+      <tr>
+        {% for color_name in color_names %}
+        <th class="text-center">{{color_name}}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    {% for line in colors %}
+    <tr>
+      {% for color in line %}
+      <td style="background-color: {{color}}"></td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+
+{% endblock %}
