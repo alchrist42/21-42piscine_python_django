@@ -1,4 +1,3 @@
-from gettext import find
 import sys
 from bs4 import BeautifulSoup
 import requests
@@ -29,12 +28,14 @@ def find_phylosofia(page, previuos=[]):
     
     links = soup.find_all('a', href=True)
     for link in links:
-        if link.get("href").startswith("/wiki/"):
+        if link.get("href").startswith("/wiki/") and not link.get("class") and not link.find_parent("td"):
             new_page = link.get("href").replace("/wiki/", "")
             if "/" not in new_page: # found page
-                print("go to ", new_page)
-                print("previous: ", link.previous)
+
+                # print("go to ", new_page)
+                # print("previous: ", link.previous)
                 return find_phylosofia(new_page, previuos)
+    print("nothing found")
     return False, 1
 
 
@@ -52,10 +53,11 @@ def main():
         print("incorrect argumetns count")
         return
     page_name = sys.argv[1].replace('\\', '')
-    print(page_name)
-    ans, deep = find_phylosofia(page_name)
+    previous = []
+    ans, deep = find_phylosofia(page_name, previous)
     if ans:
-        print(ans)
+        print('\n'.join(previous), f"deep ={deep}")
+
 
 
 
