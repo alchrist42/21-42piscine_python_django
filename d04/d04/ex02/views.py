@@ -15,12 +15,12 @@ def index(request: HttpRequest):
             logger.info(form.cleaned_data['data'])
         return redirect('/ex02')
     elif request.method == 'GET':
-        print("get_request")
+        # print("get_request")
         try:
             f = open(settings.HISTORY_LOG_FILE, 'r')
             data = f.readlines()
         except:
             data = []
-        print(data)
+        # print(data)
 
     return render(request, 'ex02/index.html', {'form': HistoryForm(), 'data': data})

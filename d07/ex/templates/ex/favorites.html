@@ -1,0 +1,26 @@
+{% extends 'ex/base.html' %}
+{% load static %}
+{% load bootstrap5 %}
+
+{% block title %}
+Detail: {{ object.title }}
+{% endblock title %}
+
+{% block body %}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="list-group">
+        {% for article in object_list %}
+          <a href="{% url 'ex:detail' article.id %}" class="list-group-item  list-group-item-action">
+            {{ article }}
+          </a>
+        {% endfor %}
+      
+      </div>
+
+
+    </div>
+  </div>
+</div>
+{% endblock body %}

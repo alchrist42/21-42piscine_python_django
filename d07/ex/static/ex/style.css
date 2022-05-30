@@ -1,0 +1,11 @@
+.likes {
+    color:red;
+}
+
+.dislikes {
+    color:black;
+}
+
+.count_likes {
+    font-weight: normal;
+}

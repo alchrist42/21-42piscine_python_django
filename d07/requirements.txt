@@ -1,0 +1,10 @@
+django
+django-bootstrap-v5
+
+# Для сохранения в json с базы данных
+# python manage.py dumpdata auth.User --indent 4 > fixtures/users.json
+# python manage.py dumpdata ex.Article --indent 4 > fixtures/articles.json
+
+# Для загрузки в чистую бд
+# python manage.py loaddata fixtures/users.json
+# python manage.py loaddata fixtures/articles.json --app ex.Article 

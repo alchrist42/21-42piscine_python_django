@@ -1,0 +1,239 @@
+{
+    "vehicles": [
+      {
+        "id": 1,
+        "start": [
+          31.33,
+          59.9
+        ],
+        "end": [
+          31.33,
+          59.9
+        ],
+        "time_window": [
+          "2022-01-10T09:00:00.000Z",
+          "2022-01-10T11:00:00.000Z"
+        ]
+      },
+      {
+        "id": 2,
+        "start": [
+          31.33,
+          59.9
+        ],
+        "end": [
+          31.33,
+          59.9
+        ],
+        "time_window": [
+          "2022-01-10T09:00:00.000Z",
+          "2022-01-10T11:00:00.000Z"
+        ]
+      },
+      {
+        "id": 3,
+        "start": [
+          31.33,
+          59.9
+        ],
+        "end": [
+          31.33,
+          59.9
+        ],
+        "time_window": [
+          "2022-01-10T09:00:00.000Z",
+          "2022-01-10T11:00:00.000Z"
+        ]
+      }
+    ],
+    "shipments": [
+      {
+        "pickup": {
+          "id": 1,
+          "description": "1 shipment, 1 point",
+          "service": 300,
+          "setup": 300,
+          "location": [
+            31.35,
+            59.85
+          ]
+        },
+        "delivery": {
+          "id": 2,
+          "description": "1 shipment, delivery",
+          "setup": 600,
+          "location": [
+            ${del_lon_1},
+            59.92
+          ]
+        }
+      },
+      {
+        "pickup": {
+          "id": 3,
+          "description": "1 shipment, 2 point",
+          "service": 300,
+          "setup": 300,
+          "location": [
+            31.30,
+            59.95
+          ]
+        },
+        "delivery": {
+          "id": 4,
+          "description": "1 shipment, delivery",
+          "setup": 600,
+          "location": [
+            ${del_lon_1},
+            59.92
+          ]
+        }
+      },
+      {
+        "pickup": {
+          "id": 5,
+          "description": "1 shipment, 3 point",
+          "service": 300,
+          "location": [
+            31.35,
+            59.98
+          ]
+        },
+        "delivery": {
+          "id": 6,
+          "description": "1 shipment, delivery",
+          "setup": 600,
+          "location": [
+            ${del_lon_1},
+            59.92
+          ]
+        }
+      },
+      {
+        "pickup": {
+          "id": 11,
+          "description": "2 shipment, 1 point",
+          "service": 300,
+          "setup": 300,
+          "location": [
+            31.35,
+            59.85
+          ]
+        },
+        "delivery": {
+          "id": 12,
+          "description": "2 shipment, delivery",
+          "setup": 600,
+          "location": [
+            ${del_lon_2},
+            59.82
+          ]
+        }
+      },
+      {
+        "pickup": {
+          "id": 13,
+          "description": "2 shipment, 2 point",
+          "service": 300,
+          "setup": 300,
+          "location": [
+            31.30,
+            59.95
+          ]
+        },
+        "delivery": {
+          "id": 14,
+          "description": "2 shipment, delivery",
+          "setup": 600,
+          "location": [
+            ${del_lon_2},
+            59.82
+          ]
+        }
+      },
+      {
+        "pickup": {
+          "id": 17,
+          "description": "2 shipment, 3 point",
+          "service": 300,
+          "location": [
+            31.35,
+            59.98
+          ]
+        },
+        "delivery": {
+          "id": 18,
+          "description": "2 shipment, delivery",
+          "setup": 600,
+          "location": [
+            ${del_lon_2},
+            59.82
+          ]
+        }
+      },
+
+      {
+        "pickup": {
+          "id": 21,
+          "description": "3 shipment, 1 point",
+          "service": 300,
+          "setup": 300,
+          "location": [
+            31.35,
+            59.85
+          ]
+        },
+        "delivery": {
+          "id": 22,
+          "description": "3 shipment, delivery",
+          "setup": 600,
+          "location": [
+            ${del_lon_3},
+            59.88
+          ]
+        }
+      },
+      {
+        "pickup": {
+          "id": 23,
+          "description": "3 shipment, 2 point",
+          "service": 300,
+          "setup": 300,
+          "location": [
+            31.36,
+            59.90
+          ]
+        },
+        "delivery": {
+          "id": 24,
+          "description": "3 shipment, delivery",
+          "setup": 600,
+          "location": [
+            ${del_lon_3},
+            59.88
+          ]
+        }
+      },
+      {
+        "pickup": {
+          "id": 27,
+          "description": "3 shipment, 3 point",
+          "service": 300,
+          "location": [
+            31.31,
+            59.98
+          ]
+        },
+        "delivery": {
+          "id": 28,
+          "description": "3 shipment, delivery",
+          "setup": 600,
+          "location": [
+            ${del_lon_3},
+            59.88
+          ]
+        }
+      }
+      
+    ]
+  }

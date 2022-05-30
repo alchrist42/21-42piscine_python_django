@@ -1,0 +1,44 @@
+{% load static %}
+{% load bootstrap5 %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'ex:index' %}">&nbsp&nbsp&nbspEx042</a>
+    
+    <div>
+        <ul class="navbar-nav mr-auto">
+            {% if user.is_authenticated %}
+            
+            {% endif %}
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'ex:index' %}">All Posts</a>
+        </li>
+        {% if user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'ex:index' %}">Following</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'ex:logout' %}">Log Out</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'ex:index' %}"><strong>{{ user.username }}</strong></a>
+            </li>
+        {% else %}
+        
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'ex:login' %}">Log In</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'ex:register' %}">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'ex:index' %}">(Anonim) <strong id=anon_user>{{ request.session.anon_user }}</strong></a>
+            </li>
+        {% endif %}
+        </ul>
+    </div>
+    </nav>
+
+<div class="body">
+    {% block body %}
+    {% endblock %}
+</div>
