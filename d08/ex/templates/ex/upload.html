@@ -1,0 +1,19 @@
+{% extends 'ex/base.html' %}
+{% load static %}
+{% load bootstrap5 %}
+
+{% block title %}
+Upload page
+{% endblock title %}
+
+{% block body %}
+
+    <h2>Upload</h2>
+    
+    <form action="{% url 'ex:upload' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% bootstrap_form form layout='inline' form_group_class='w3-input w3-border-0 w3-large p-2'%}
+        {% buttons submit='Upload' reset="Cancel" %}{% endbuttons %}
+    </form>
+
+{% endblock %}
